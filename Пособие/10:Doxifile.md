@@ -1,0 +1,369 @@
+Отлично! Ниже — **готовый `Doxyfile`** и пример **`README.md`**, которые ты можешь использовать в своём проекте.
+
+---
+
+## 📎 1. `Doxyfile`
+
+Создай файл `Doxyfile` в папке `src/` и вставь в него содержимое:
+
+```txt
+# Doxyfile 1.9.8
+
+PROJECT_NAME           = "S21Matrix"
+PROJECT_BRIEF          = "C++ Matrix Library with OOP, Unit Tests and Doxygen"
+PROJECT_LOGO           = 
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = YES
+ALLOW_UNICODE_NAMES    = NO
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ALWAYS_DETAILED_SEC    = NO
+INLINE_INHERITED_MEMB  = NO
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+SHORT_NAMES            = NO
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = NO
+INHERIT_DOCS           = YES
+SEPARATE_MEMBER_PAGES  = NO
+TAB_SIZE               = 4
+ALIASES                = 
+TCL_SUBST              = 
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+OPTIMIZE_FOR_FORTRAN   = NO
+OPTIMIZE_OUTPUT_VHDL   = NO
+OPTIMIZE_OUTPUT_SLICE  = NO
+EXTENSION_MAPPING      = 
+MARKDOWN_SUPPORT       = YES
+TOC_INCLUDE_HEADINGS   = 0
+AUTOLINK_SUPPORT       = YES
+BUILTIN_STL_SUPPORT    = NO
+CPP_CLI_SUPPORT        = NO
+SIP_SUPPORT            = NO
+IDL_PROPERTY_SUPPORT   = YES
+DISTRIBUTE_GROUP_DOC   = NO
+GROUP_NESTED_COMPOUNDS = NO
+SUBGROUPING            = YES
+INLINE_GROUPED_CLASSES = NO
+INLINE_SIMPLE_STRUCTS  = NO
+TYPEDEF_HIDES_STRUCT   = NO
+LOOKUP_CACHE_SIZE      = 0
+NUM_PROC_THREADS       = 1
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_PRIV_VIRTUAL   = YES
+EXTRACT_PACKAGE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = NO
+EXTRACT_ANON_NSPACES   = NO
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_COMPOUNDS  = NO
+HIDE_IN_BODY_DOCS      = NO
+INTERNAL_DOCS          = NO
+CASE_SENSE_NAMES       = YES
+HIDE_SCOPE_NAMES       = NO
+HIDE_COMPOUND_REFERENCE= NO
+SHOW_INCLUDE_FILES     = YES
+SHOW_GROUPED_MEMB_INC  = NO
+FORCE_LOCAL_INCLUDES   = NO
+INLINE_INFO            = YES
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = NO
+SORT_MEMBERS_CTORS_1ST = NO
+SORT_GROUP_NAMES       = NO
+SORT_BY_SCOPE_NAME     = NO
+STRICT_PROTO_MATCHING  = NO
+GENERATE_TODOLIST      = YES
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST= YES
+ENABLED_SECTIONS       = 
+MAX_INITIALIZER_LINES  = 30
+SHOW_USED_FILES        = YES
+SHOW_DIRECTORIES       = YES
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = YES
+FILE_VERSION_FILTER    = 
+LAYOUT_FILE            = 
+CITE_BIB_FILES         = 
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+WARN_AS_ERROR          = NO
+WARN_FORMAT            = "$file:$line: $text"
+WARN_LOGFILE           = 
+INPUT                  = . ../src
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.cpp \
+                         *.h \
+                         *.cxx \
+                         *.hxx \
+                         *.cc \
+                         *.hh \
+                         *.c++ \
+                         *.h++
+RECURSIVE              = YES
+EXCLUDE                = build lib tests
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = 
+EXCLUDE_SYMBOLS        = 
+EXAMPLE_PATH           = 
+EXAMPLE_PATTERNS       = *
+EXAMPLE_RECURSIVE      = NO
+IMAGE_PATH             = 
+INPUT_FILTER           = 
+FILTER_PATTERNS        = 
+FILTER_SOURCE_FILES    = NO
+FILTER_SOURCE_PATTERNS = 
+USE_MDFILE_AS_MAINPAGE = 
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+REFERENCES_LINK_SOURCE = YES
+SOURCE_TOOLTIPS        = YES
+USE_HTAGS              = NO
+VERBATIM_HEADERS       = YES
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 5
+IGNORE_PREFIX          = 
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_STYLESHEET        = 
+HTML_EXTRA_FILES       = 
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_MENUS     = YES
+HTML_DYNAMIC_SECTIONS  = NO
+HTML_INDEX_NUM_ENTRIES = 100
+GENERATE_DOCSET        = NO
+DOCSET_FEEDNAME        = "Doxygen Generated Docs"
+DOCSET_BUNDLE_ID       = org.doxygen.Project
+DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
+DOCSET_PUBLISHER_NAME  = Publisher
+GENERATE_HTMLHELP      = NO
+GENERATE_DOCSET        = NO
+GENERATE_PDF           = NO
+GENERATE_QHP           = NO
+GENERATE_ECLIPSEHELP   = NO
+DISABLE_INDEX          = NO
+GENERATE_TREEVIEW      = YES
+ENUM_VALUES_PER_LINE   = 4
+TREEVIEW_WIDTH         = 250
+EXT_LINKS_IN_WINDOW    = NO
+FORMULA_FONTSIZE       = 10
+FORMULA_TRANSPARENT    = YES
+USE_MATHJAX            = YES
+MATHJAX_VERSION        = MathJax_2
+MATHJAX_FORMAT         = HTML-CSS
+MATHJAX_RELPATH        = https://cdn.jsdelivr.net/npm/mathjax@2
+MATHJAX_EXTENSIONS     = 
+MATHJAX_FONT           = default
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+EXTERNAL_SEARCH        = NO
+SEARCHENGINE_URL       = 
+SEARCHDATA_FILE        = searchdata.xml
+EXTERNAL_SEARCH_ID     = 
+EXTRA_SEARCH_MAPPINGS  = 
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+GENERATE_DOCBOOK       = NO
+GENERATE_AUTOGEN_DEF   = NO
+GENERATE_PERLMOD       = NO
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = NO
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = 
+INCLUDE_FILE_PATTERNS  = *.h
+PREDEFINED             = 
+EXPAND_AS_DEFINED      = 
+SKIP_FUNCTION_MACROS   = YES
+TAGFILES               = 
+GENERATE_TAGFILE       = 
+ALLEXTERNALS           = NO
+EXTERNAL_GROUPS        = YES
+EXTERNAL_PAGES         = YES
+PERL_PATH              = /usr/bin/perl
+CLASS_DIAGRAMS         = YES
+MSCGEN_PATH            = 
+DIA_PATH               = 
+HIDE_UNDOC_RELATIONS   = YES
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 0
+DOT_FONTNAME           = Helvetica
+DOT_FONTSIZE           = 10
+DOT_FONTPATH           = 
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = NO
+UML_LIMIT_NUM_FIELDS   = 10
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DIR_GRAPH_MAX_DEPTH    = 1
+DOT_IMAGE_FORMAT       = png
+INTERACTIVE_SVG        = NO
+DOT_PATH               = 
+DOTFILE_DIRS           = 
+MSCFILE_DIRS           = 
+DIAFILE_DIRS           = 
+PLANTUML_JAR_PATH      = 
+PLANTUML_CFG_FILE      = 
+PLANTUML_INCLUDE_PATH  = 
+DOT_GRAPH_MAX_NODES    = 50
+MAX_DOT_GRAPH_DEPTH    = 0
+DOT_TRANSPARENT        = NO
+DOT_MULTI_TARGET       = NO
+GENERATE_LEGEND        = YES
+DOT_CLEANUP            = YES
+```
+
+> ✅ Этот `Doxyfile`:
+> - Генерирует HTML в `docs/html`
+> - Включает диаграммы (если установлен `graphviz`)
+> - Игнорирует `build`, `lib`, `tests`
+> - Поддерживает Markdown
+> - Показывает приватные методы
+
+---
+
+## 📄 2. `README.md`
+
+Создай файл `README.md` в корне проекта (рядом с `src/`):
+
+```markdown
+# S21Matrix — C++ Matrix Library
+
+![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+A modern C++ library for matrix operations, built with OOP principles, unit testing, and full documentation.
+
+## 📁 Project Structure
+
+```
+cpp_matrix_project/
+├── src/
+│   ├── s21_matrix_oop.h
+│   ├── *.cpp
+│   ├── tests/
+│   ├── Makefile
+│   ├── Doxyfile
+│   └── docs/ (generated)
+```
+
+## 🛠️ Features
+
+- Object-Oriented Design
+- RAII-based memory management
+- Operator overloading (`+`, `-`, `*`, `==`, `()`)
+- Matrix operations: transpose, determinant, inverse
+- Unit tests with Google Test
+- Memory leak checks with Valgrind
+- Code formatting with `clang-format`
+- Documentation with Doxygen
+
+## 🚀 Quick Start
+
+### 1. Install dependencies (Ubuntu/Debian)
+
+```bash
+sudo apt update
+sudo apt install build-essential libgtest-dev valgrind cppcheck clang-format doxygen graphviz
+```
+
+### 2. Build and test
+
+```bash
+cd src
+make test
+```
+
+### 3. Generate documentation
+
+```bash
+make docs
+firefox docs/html/index.html
+```
+
+## 📚 Documentation
+
+- [Doxygen Docs](docs/html/index.html) — generated HTML documentation
+- See `src/` for full source code
+
+## 🧪 Testing
+
+```bash
+make test        # Run unit tests
+make memcheck    # Check memory leaks (add to Makefile if needed)
+make check-format # Check code style
+```
+
+## 📝 Style Guide
+
+- Follows [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+- 2 spaces indentation
+- `clang-format` used for auto-formatting
+
+## 📂 License
+
+MIT License — free to use and modify.
+```
+
+---
+
+## ✅ Как использовать
+
+1. Сохрани `Doxyfile` в папку `src/`
+2. Сохрани `README.md` в корень проекта (например, `~/cpp_matrix_project/README.md`)
+3. Убедись, что `doxygen` установлен
+4. Сгенерируй документацию:
+
+```bash
+cd ~/cpp_matrix_project/src
+doxygen Doxyfile
+```
+
+5. Открой:
+
+```bash
+firefox docs/html/index.html
+```
+
+---
+
+✅ **Готово!**  
+Теперь у твоего проекта:
+- Профессиональная документация
+- Понятный `README`
+- Полная инструкция для других разработчиков
+
+Если хочешь — могу добавить:
+- GitHub Actions CI
+- `.gitignore`
+- CMakeLists.txt
+
+Продолжай в том же духе! 💪🚀

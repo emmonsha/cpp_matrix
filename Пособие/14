@@ -1,0 +1,268 @@
+Отлично! Ниже — **полный комплект профессионального open-source C++ проекта**:
+
+✅ Добавим:
+- `CONTRIBUTING.md` — как вносить вклад  
+- `SECURITY.md` — политика безопасности  
+- `LICENSE` — MIT  
+- `CODE_OF_CONDUCT.md` — правила поведения  
+- `dependabot.yml` — автоматические обновления  
+- Бейджи в `README.md`  
+
+---
+
+## ✅ 1. `LICENSE` (MIT)
+
+Создай в корне: `LICENSE`
+
+```text
+MIT License
+
+Copyright (c) 2025 Your Name
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## ✅ 2. `CONTRIBUTING.md`
+
+```markdown
+# Как внести вклад
+
+Спасибо за интерес к проекту! Мы рады любому вкладу: исправлениям, улучшениям, документации.
+
+## 📌 Правила
+
+1. **Форкните репозиторий**
+2. Создайте ветку: `git checkout -b feature/ваша-фича`
+3. Внесите изменения и закоммитьте: `git commit -m "Описание"`
+4. Запушьте: `git push origin feature/ваша-фича`
+5. Создайте **Pull Request**
+
+## 🧪 Требования
+
+- Код должен проходить все тесты (`make test`)
+- Не должно быть утечек памяти (`make memcheck`)
+- Стиль: Google C++ Style (`make format`)
+- Добавляйте тесты для нового кода
+- Обновляйте документацию при необходимости
+
+## 📚 Процесс ревью
+
+- PR будет проверен на CI (тесты, стиль, покрытие)
+- Один из maintainers оставит комментарии
+- После одобрения — слияние
+
+## 🙏 Спасибо за вклад!
+```
+
+---
+
+## ✅ 3. `CODE_OF_CONDUCT.md`
+
+```markdown
+# Кодекс поведения
+
+Мы стремимся создать инклюзивное сообщество разработчиков. Все участники обязаны соблюдать следующие правила:
+
+- Уважайте других, независимо от опыта, пола, расы, религии
+- Избегайте оскорблений, токсичного поведения
+- Будьте вежливы в обсуждениях
+- Принимайте конструктивную критику
+- Не спамьте и не продвигайте сторонние проекты
+
+Нарушения будут пресекаться. Сообщайте о проблемах maintainer'ам.
+
+Спасибо за создание дружелюбной среды!
+```
+
+---
+
+## ✅ 4. `SECURITY.md`
+
+```markdown
+# Политика безопасности
+
+Мы серьёзно относимся к безопасности.
+
+## Уязвимости
+
+Если вы нашли уязвимость:
+- Не публикуйте её публично
+- Напишите на: security@yourdomain.com
+- Мы ответим в течение 48 часов
+- Работаем над исправлением и благодарим за вклад
+
+## Инструменты
+
+- CodeQL — автоматический анализ
+- Valgrind — проверка памяти
+- CI — регулярные проверки
+
+Спасибо за помощь в улучшении безопасности!
+```
+
+---
+
+## ✅ 5. `.github/dependabot.yml`
+
+```yaml
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+```
+
+> ✅ Будет автоматически предлагать обновления для GitHub Actions.
+
+---
+
+## ✅ 6. Обновлённый `README.md` с бейджами
+
+Замени начало `README.md`:
+
+```markdown
+# S21Matrix — C++ Matrix Library
+
+![CI](https://github.com/ваше_имя/s21matrix/actions/workflows/ci.yml/badge.svg)
+![Codecov](https://img.shields.io/codecov/c/github/ваше_имя/s21matrix)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
+
+A modern C++ library for matrix operations, built with OOP principles, unit testing, and full documentation.
+
+## 📁 Project Structure
+...
+```
+
+> 🔁 Замени `ваше_имя/s21matrix` на реальные значения.
+
+---
+
+## ✅ 7. Дополнительно: `.editorconfig` (для единообразия редакторов)
+
+Создай `.editorconfig` в корне:
+
+```ini
+# .editorconfig
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.cpp]
+indent_size = 2
+
+[*.h]
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+
+[*.yml]
+indent_size = 2
+```
+
+---
+
+## ✅ Финальная структура проекта
+
+```
+project/
+├── src/
+│   ├── *.cpp
+│   ├── tests/
+│   ├── Makefile
+│   ├── Doxyfile
+│   └── CMakeLists.txt
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml
+│   │   └── codeql.yml
+│   └── dependabot.yml
+├── docs/                  # generated
+├── .gitignore
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+├── RELEASE_TEMPLATE.md
+├── Dockerfile
+└── .editorconfig
+```
+
+---
+
+## ✅ Что ты получил
+
+| Файл | Назначение |
+|------|-----------|
+| `LICENSE` | Юридическая защита и разрешение на использование |
+| `CONTRIBUTING.md` | Инструкция для вкладчиков |
+| `CODE_OF_CONDUCT.md` | Правила поведения |
+| `SECURITY.md` | Политика безопасности |
+| `dependabot.yml` | Автообновление GitHub Actions |
+| Бейджи | Визуализация статуса проекта |
+| `.editorconfig` | Единообразие форматирования |
+
+---
+
+## 🎉 Поздравляю!
+
+Ты создал **полностью профессиональный, готовый к open-source, C++ проект**, который:
+- ✅ Легко развивать
+- ✅ Безопасен
+- ✅ Хорошо документирован
+- ✅ Поддерживает CI/CD
+- ✅ Готов к вкладам сообщества
+
+---
+
+### 🚀 Дальнейшие шаги:
+
+1. Загрузи на GitHub:  
+   ```bash
+   git add .
+   git commit -m "feat: complete open-source setup"
+   git push origin main
+   ```
+
+2. Активируй GitHub Pages, Codecov, Dependabot
+
+3. Пригласи коллег — пусть вносят вклад!
+
+---
+
+Если захочешь — могу помочь:
+- Сделать **официальный сайт** с GitHub Pages
+- Добавить **чат (Discord/Gitter)**
+- Создать **roadmap**
+
+Ты проделал **огромную работу** — гордись этим! 💪🚀
