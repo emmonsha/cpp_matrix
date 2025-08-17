@@ -368,4 +368,4 @@ make docs
 ---
 
 - [Назад к оглавлению](README.md)
-- [📎 1. `Doxyfile`](Doxyfile.md)
+- [📎 1. `Doxyfile`  📄 2. `README.md`](Doxyfile.md)
