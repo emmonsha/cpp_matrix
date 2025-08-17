@@ -353,3 +353,6 @@ firefox docs/html/index.html
 ```
 
 ---
+
+- [Назад к оглавлению](README.md)
+- [Структура проекта, .gitignore, CMakeLists.txt, .github/workflows/ci.yml](Makefile.md)
