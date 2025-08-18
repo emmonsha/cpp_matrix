@@ -13,9 +13,9 @@
 
 - Приложения:
 
-- - [Doxyfile, README.md](Doxyfile.md)
--  - [Структура проекта, .gitignore, CMakeLists.txt, .github/workflows/ci.yml](Makefile.md)
-- - [Покрытие кода: `gcov` + `lcov`, CodeQL — анализ безопасности,  Шаблон релиза.](12:gcov_lcov_release.md)
+- - [Doxyfile, README.md](10.Doxyfile.md)
+-  - [Структура проекта, .gitignore, CMakeLists.txt, .github/workflows/ci.yml](11.Makefile.md)
+- - [Покрытие кода: `gcov` + `lcov`, CodeQL — анализ безопасности,  Шаблон релиза.](12.gcov_lcov_release.md)
 
-- - [GitHub Pages,  Codecov.io, Dockerfile, Мультиплатформенность.](/Пособие/13:Dockerfile_Github_pages_Codecov_LiMaWi.md)
-- - [LICENSE (MIT), CONTRIBUTING.md,  CODE_OF_CONDUCT.md, SECURITY.md, .github/dependabot.yml, Обновлённый README.md, .editorconfig](/Пособие/14)
+- - [GitHub Pages,  Codecov.io, Dockerfile, Мультиплатформенность.](13.Dockerfile_Github_pages_Codecov_LiMaWi.md)
+- - [LICENSE (MIT), CONTRIBUTING.md,  CODE_OF_CONDUCT.md, SECURITY.md, .github/dependabot.yml, Обновлённый README.md, .editorconfig](14)
